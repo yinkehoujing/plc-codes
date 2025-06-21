@@ -48,8 +48,6 @@ let red s = "\027[31m" ^ s ^ "\027[0m"
 let pad_right s len =
   s ^ String.make (max 0 (len - String.length s)) ' '
 
-let unused = ()
-
 let () =
   let () = Printexc.record_backtrace true in
 
